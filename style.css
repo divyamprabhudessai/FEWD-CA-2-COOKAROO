@@ -3,12 +3,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     font-family: 'Roboto';
-
+    overflow-x: hidden;
 }
 /* body{
-    background-image: url('./Assets/background_image.jpg');
+    background-image: url('./Assets/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 } */
 
 #logoimg{
@@ -22,6 +23,12 @@
     justify-content: space-around;
 }
 
+nav{
+    background-color: black;
+    height: 8vw;
+    overflow: hidden;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -29,28 +36,109 @@ a{
     margin-top: 3vw;
 }
 
-::-webkit-scrollbar,
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track { 
-    width: 8px;
-    border: none;
-    background: transparent;
+.main{
+    background-image: url(./Assets/backgroundImage.jpg);
+    height: 43vw;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6vw;
+}
+#title{
+    /* Spin, Cook, Savor */
+
+position:absolute;
+width: 582px;
+height: 75px;
+left: 9.53vw;
+top: 16vw;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: -19vw;
+/* identical to box height */
+text-transform: uppercase;
+
+text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.32);
+
+}
+#inputbox{
+    /* Rectangle 3 */
+
+position: absolute;
+width: 313px;
+height: 52px;
+left: 9.53vw;
+top:35vw;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+border-radius: 14px;
+text-align: center;
+font-size: 1.5vw;
+text-transform: uppercase;
+
+
+}
+#info{
+    
+
+    position: absolute;
+    width: 50vw;
+    height: 13.96vw;
+    left: 9.53vw;
+    top: 21.88vw;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw; 
+    line-height: 1.5vw; 
+    text-transform: uppercase;
+    
+
+color: #FFFFFF;
+
+
+}
+.page-2{
+    height: 64vw;
+    background-image: url(./Assets/2nd\ bg.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    
 }
 
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-track-piece,
-::-webkit-scrollbar-corner,
-::-webkit-resizer {
-    display: none;
+.randomMeal{
+   
+
+position: absolute;
+width: 500px;
+height: 333.25px;
+left: 43vw;
+top: 900px;
+border-radius: 14px;
+color: white;
 }
 
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color:white;
+#img-1{
+    border-radius: 20%;
+    margin-right: 70vw;
 }
 
-::-webkit-scrollbar-track {
-    background-image: url("https://i.imgur.com/GvV1R30.png");
-    background-repeat: repeat-y;
-    background-size: contain;
+.category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+   margin-top: 80vh;
+   height: 15vw;
+   display: none;
+}
+.meal{
+    background-color: black;
+
 }
