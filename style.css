@@ -27,7 +27,12 @@ nav{
     background-color: black;
     height: 8vw;
     overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    box-shadow: #fffefe 1px 1px 11px;
+    z-index: 1;
 }
+
 
 a{
     color: white;
@@ -38,7 +43,8 @@ a{
 
 .main{
     background-image: url(./Assets/backgroundImage.jpg);
-    height: 43vw;
+    background-color: black;
+    height: 60vw;
     background-size: cover;
     color: white;
     display: flex;
@@ -69,7 +75,7 @@ text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.32);
     /* Rectangle 3 */
 
 position: absolute;
-width: 313px;
+width: 20.377vw;
 height: 52px;
 left: 9.53vw;
 top:35vw;
@@ -80,9 +86,16 @@ border-radius: 14px;
 text-align: center;
 font-size: 1.5vw;
 text-transform: uppercase;
-
-
 }
+
+/* #search{
+position: absolute;
+width: 313px;
+height:3vw;
+margin-left: 47vw;
+margin-top:100vw;
+} */
+
 #info{
     
 
@@ -96,7 +109,7 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5vw; 
-    line-height: 1.5vw; 
+    /* line-height: 2vw;  */
     text-transform: uppercase;
     
 
@@ -105,40 +118,78 @@ color: #FFFFFF;
 
 }
 .page-2{
-    height: 64vw;
-    background-image: url(./Assets/2nd\ bg.png);
-    background-size: 100vw;
+    min-height: 40vw;
+    /* background-image: url(./Assets/2nd\ bg.png); */
+    background-color: black;
+    background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .randomMeal{
-   
-
-position: absolute;
-width: 500px;
+width: 20vw;
 height: 333.25px;
-left: 43vw;
-top: 900px;
+margin-left: 40vw;
+margin-top: 5vw;
 border-radius: 14px;
-color: white;
+color: black;
+background-color: #fffefe;
+overflow: hidden;
+
 }
 
 #img-1{
     border-radius: 20%;
-    margin-right: 70vw;
+    margin-right: 80vw;
+    padding: 2vw;
+    justify-self: center;
+    overflow: hidden;
 }
 
-.category{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: white;
-   margin-top: 80vh;
-   height: 15vw;
-   display: none;
+#search{
+    margin-left: 30vw;
+    margin-top: 27.2vw;
+    height: 52px;
+    width: 4vw;
+    border-radius: 20%;
 }
+
+#randomName{
+  text-align: center;
+  margin-top: -1.5vw;
+  text-transform: uppercase;
+}
+
 .meal{
     background-color: black;
+    height: 4vw;
 
+}
+
+#meal{
+    margin-top: 12vw;
+}
+.container{
+    height: auto;
+}
+.tile{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 5vw; */
+    justify-content:space-around;
+    column-gap: 3vw;
+    row-gap: 8vw;
+    color: #FFFFFF;
+    text-align: center;
+    text-overflow: ellipsis;
+    line-break:strict;
+    box-shadow: #fffefe 2px 2px 8px;
+
+}
+
+.tile h3{
+    margin-left: -13vw;
+    
+}
+.tile img{
+    margin-top:2vw;
 }
