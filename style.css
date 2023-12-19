@@ -4,23 +4,23 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    overflow-x: hidden;
 }
-/* body{
-    background-image: url('./Assets/backgroundImage.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
+.container{
+    height: 500vw;
+}
+
 
 #logoimg{
     height: 20vw;
+    margin-left: 17vw;
 
 }
 
 .logo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   justify-content: center;
+   align-items: center;
 }
 
 nav{
@@ -88,17 +88,8 @@ font-size: 1.5vw;
 text-transform: uppercase;
 }
 
-/* #search{
-position: absolute;
-width: 313px;
-height:3vw;
-margin-left: 47vw;
-margin-top:100vw;
-} */
 
 #info{
-    
-
     position: absolute;
     width: 50vw;
     height: 13.96vw;
@@ -111,29 +102,30 @@ margin-top:100vw;
     font-size: 1.5vw; 
     /* line-height: 2vw;  */
     text-transform: uppercase;
-    
-
-color: #FFFFFF;
-
-
+    color: #FFFFFF;
 }
+
 .page-2{
     min-height: 40vw;
-    /* background-image: url(./Assets/2nd\ bg.png); */
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: #FFFFFF 2px 2px 8px;
 }
 
 .randomMeal{
 width: 20vw;
 height: 333.25px;
 margin-left: 40vw;
-margin-top: 5vw;
+margin-top: 3vw;
 border-radius: 14px;
 color: black;
-background-color: #fffefe;
+background-color: #fcf0f0;
 overflow: hidden;
+box-shadow: #FFFFFF 2px 2px 8px;
+cursor: pointer;
 
 }
 
@@ -171,7 +163,7 @@ overflow: hidden;
 .container{
     height: auto;
 }
-.tile{
+#meal{
     display: flex;
     flex-wrap: wrap;
     /* width: 5vw; */
@@ -182,14 +174,287 @@ overflow: hidden;
     text-align: center;
     text-overflow: ellipsis;
     line-break:strict;
-    box-shadow: #fffefe 2px 2px 8px;
-
+    margin-top: 3vw;
 }
 
-.tile h3{
-    margin-left: -13vw;
-    
+#category{
+    text-transform: uppercase;
+    margin-top: 5vw;
 }
+
+ .tile{
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 10%;
+    width: 20vw;
+    cursor: pointer;
+    box-shadow: #FFFFFF 2px 2px 8px;
+    font-weight: bolder;
+
+} 
 .tile img{
     margin-top:2vw;
+    border-radius: 20%;
+    width: 15vw;
+}
+
+.modalContainer{
+    width: 50vw;
+    height: 65vh;
+    background-color: #050000;
+    box-shadow: #FFF 2px 2px 8px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,25%);
+    padding: 10px;
+    display: none;
+    position: fixed;
+}
+
+.modal{
+    margin-top: 3.5vw;
+    background-color: #FFF;
+    width: 18vw;
+    height: 17vw;
+    transform: rotate(-11.12deg);
+    box-shadow: 8px 8px 9px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 14px;
+}
+#smallModalImg{
+    border-radius: 14px;
+}
+
+.ingredients{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modalTop{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.close{
+    position: absolute;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+}
+
+.modalBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list{
+    color: #fff;
+    font-family: 'Jockey One';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 4vw;
+    margin-top: 20px;
+}
+
+.bigModal{
+    backdrop-filter: blur(10px);;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    visibility: hidden;
+    top: 0%;
+    left: 0%;
+    background-color: #00000029;
+    z-index: 10;
+}
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+/* Media query for tablets and larger screens */
+@media only screen and (max-width: 768px) {
+    #title {
+        font-size: 4vw;
+        position:absolute;
+        width: 582px;
+        height: 75px;
+        left: 9.53vw;
+        top: 16vw;
+    }
+
+    #inputbox {
+        font-size: 1.5vw;
+        height: 4vw;
+    }
+
+    .randomMeal{
+        width: 23vw;
+        height: 25vw;
+        margin-left: 40vw;
+        margin-top: 3vw;
+        border-radius: 14px; 
+        font-size: 2vw;
+        }
+        #img-1{
+            width: 15vw;
+            margin-left: 2vw;
+        }
+}
+
+
+
+/* Media query for smartphones */
+@media only screen and (max-width: 600px) {
+
+    body{
+        height: 100vh;
+    }
+   
+    #title {
+        font-size: 7vw;
+    }
+    #logoimg{
+        height: 10vw;
+        margin-left: -13vw;
+        margin-top: 1.5vw;
+    
+    }
+    
+    .page-2{
+        min-height: 40vw;
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 150vw;
+    }
+
+    #meal{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-left: 40vw;
+        column-gap: 3vw;
+        margin-top: 3vw;
+    }
+
+    .tile{
+        background-color: #FFFFFF;
+        border-radius: 10%;
+        width: 26vw;
+        font-weight: bolder;
+        font-size: 1vw;
+
+    
+    } 
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav{
+        background-color: black;
+        height: 6vw;
+        overflow: hidden;
+        position: fixed;
+        width: 100vw;
+        box-shadow: #fffefe 1px 1px 11px;
+        z-index: 150vw;
+        
+    }
+
+    #inputbox {
+        font-size: 4vw;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5vw;
+        margin-top: 3vw;
+    }
+    
+    .main{
+        background-image: url(./Assets/backgroundImage.jpg);
+        background-color: black;
+        height: 60vw;
+        background-size:100vw;
+        background-repeat: no-repeat;
+        row-gap: 6vw;
+        width: 150vw;
+    }
+    #title{
+        /* Spin, Cook, Savor */
+    width: 582px;
+    height: 75px;
+    left:3vw;
+    top: 16vw;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: -19vw;
+    text-transform: uppercase;
+    
+    text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.32);
+    
+    }
+    #inputbox{    
+    position: absolute;
+    width: 15vw;
+    height: 3vw;
+    left: 3vw;
+    top:35vw;
+    mix-blend-mode: normal;
+    text-align: center;
+    font-size: 1vw;
+    }
+
+    #popMeal{
+        margin-left: -45vw;
+    }
+
+    #category{
+        margin-left: -45vw;
+    }
+    
+    
+    #info{
+        position: absolute;
+        width: 28vw;
+        height: 13.96vw;
+        left: 3vw;
+        top: 20vw;
+        font-size: 1vw; 
+        
+    }
+
+    footer{
+        width: 150vw;
+        height: max-content;
+      
+    }
+
+    .content{
+        margin-left: -45vw;
+    }
+
+
 }
