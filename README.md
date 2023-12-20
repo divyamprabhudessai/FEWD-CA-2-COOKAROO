@@ -7,6 +7,9 @@ Welcome to Cookaroo, your ultimate culinary sidekick designed to eliminate the d
 ### SPIN, COOK, SAVOR
 Cookaroo is all about embracing spontaneity, breaking free from routine, and adding excitement to your daily cooking adventures. Our simple spin feature helps you discover exciting and diverse recipes tailored to your tastes. Let the culinary journey begin!
 
+![main](https://github.com/divyamprabhudessai/FEWD-CA-2-COOKAROO/assets/144110931/bf9379b6-d1a1-4db1-9e9d-6539fca6e461)
+
+
 **Search for Recipes:**
 Use the search bar to explore a world of recipes. Simply enter your desired category or meal, and Cookaroo will guide you on a delicious journey.
 
