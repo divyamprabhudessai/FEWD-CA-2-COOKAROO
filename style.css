@@ -8,6 +8,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
+    
 }
 .container{
     height: 500vw;
@@ -58,7 +60,7 @@ a{
     /* Spin, Cook, Savor */
 
 position:absolute;
-width: 582px;
+width: auto;
 height: 75px;
 left: 9.53vw;
 top: 16vw;
@@ -141,11 +143,13 @@ cursor: pointer;
 }
 
 #searchbtn{
-    margin-left: 30vw;
-    margin-top: 27.2vw;
-    height: 3vw;
-    width: 2vw;
-    border-radius: 20%;
+    margin-left: 33vw;
+    margin-top: 35.2vw;
+    height: 3.5vw;
+    width: 5vw;
+    cursor: pointer;
+    border-radius: 14px;
+
 }
 
 #randomName{
@@ -212,11 +216,12 @@ cursor: pointer;
     padding: 10px;
     display: none;
     position: fixed;
+    margin-top: 4vw;
 }
 
 .modal{
     margin-top: 3.5vw;
-    background-color: #FFF;
+    background-color: #56df68;
     width: 18vw;
     height: 17vw;
     transform: rotate(-11.12deg);
@@ -227,10 +232,12 @@ cursor: pointer;
     justify-content: center;
     padding: 20px 0;
     border-radius: 14px;
+    font-size: 1vw;
 }
 #smallModalImg{
     border-radius: 14px;
 }
+
 
 .ingredients{
     color: #ffffff;
@@ -276,7 +283,7 @@ cursor: pointer;
 .bigModal{
     backdrop-filter: blur(10px);;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: fixed;
     visibility: hidden;
     top: 0%;
@@ -288,7 +295,7 @@ cursor: pointer;
 
 footer{
     text-align: center;
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     color: #FFFFFF;
 }
 
@@ -297,11 +304,109 @@ footer{
     #title {
         font-size: 4vw;
         position:absolute;
-        width: 582px;
+        width:auto;
         height: 75px;
         left: 9.53vw;
         top: 16vw;
     }
+
+    .modalContainer{
+        width: 50vw;
+        height: 50vh;
+        background-color: #050000;
+        box-shadow: #FFF 2px 2px 8px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,25%);
+        padding: 10px;
+        display: none;
+        position: fixed;
+    }
+    
+    .modal{
+        margin-top: 3.5vw;
+        background-color: #56df68;
+        width: 18vw;
+        height: 10vw;
+        transform: rotate(-11.12deg);
+        box-shadow: 8px 8px 9px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        border-radius: 14px;
+        text-align: center;
+    }
+    #smallModalImg{
+        border-radius: 14px;
+        width: 10vw;
+        
+    }
+
+    #searchbtn{
+        margin-left: 33vw;
+        margin-top: 35.2vw;
+        height: 4vw;
+        width: 5vw;
+        cursor: pointer;
+        border-radius: 14px;
+    
+    }
+    
+    .ingredients{
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .modalTop{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .close{
+        position: absolute;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .modalBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .list{
+        color: #fff;
+        font-family: 'Jockey One';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 4vw;
+        margin-top: 20px;
+    }
+    
+    .bigModal{
+        backdrop-filter: blur(10px);;
+        width: 100vw;
+        height: auto;
+        position: fixed;
+        visibility: hidden;
+        top: 0%;
+        left: 0%;
+        background-color: #00000029;
+        z-index: 10;
+    }
+    
 
     #inputbox {
         font-size: 1.5vw;
@@ -334,10 +439,11 @@ footer{
    
     #title {
         font-size: 7vw;
+        width: auto;
     }
     #logoimg{
         height: 10vw;
-        margin-left: -13vw;
+        margin-left: 4vw;
         margin-top: 1.5vw;
     
     }
@@ -347,8 +453,12 @@ footer{
         background-color: black;
         background-size: cover;
         background-repeat: no-repeat;
+
     }
 
+    #searchimg{
+        width: 10px;
+    }
     #meal{
         display: flex;
         flex-direction: column;
@@ -405,8 +515,7 @@ footer{
         row-gap: 6vw;
        }
     #title{
-        /* Spin, Cook, Savor */
-    width: 582px;
+    width: auto;
     height: 75px;
     left:3vw;
     top: 16vw;
@@ -448,11 +557,13 @@ footer{
     footer{
         height: max-content;
         text-align: center;
+        
+    }
+    .content{
+        margin-left: 5vw;
     }
 
-    .content{
-        margin-left: -45vw;
-    }
+
 
 
 }
