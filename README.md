@@ -56,4 +56,5 @@ When you use the search box to explore a specific category, the magic happens. C
 Enjoy your culinary journey with Cookaroo! If you have any questions or feedback, feel free to reach out.
 
 Happy Cooking!
+
 Team Cookaroo
