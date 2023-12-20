@@ -47,9 +47,10 @@ When you use the search box to explore a specific category, the magic happens. C
 ### External APIs:
 - [The Meal DB API](https://www.themealdb.com/api.php)
 
+### Deployed link:
+
 ### How to Run the Project:
-1. Clone the repository.
-2. Open `index.html` in your preferred web browser.
+1. Open the deployed link in your preferred browser.
 3. Explore the exciting world of Cookaroo!
 
 Enjoy your culinary journey with Cookaroo! If you have any questions or feedback, feel free to reach out.
