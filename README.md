@@ -57,7 +57,9 @@ When you use the search box to explore a specific category, the magic happens. C
 ### External APIs:
 - [The Meal DB API](https://www.themealdb.com/api.php)
 
-### Deployed link:
+### Deployed link: 
+
+https://cookaroo.netlify.app/
 
 ### How to Run the Project:
 1. Open the deployed link in your preferred browser.
