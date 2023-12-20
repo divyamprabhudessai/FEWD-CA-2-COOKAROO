@@ -15,9 +15,16 @@ Use the search bar to explore a world of recipes. Simply enter your desired cate
 ### POPULAR MEAL
 Every time you refresh the page, Cookaroo presents you with a new and enticing meal. Feast your eyes on a tantalizing image of the meal accompanied by its name. Embrace the joy of discovering a new culinary delight with each visit.
 
+
+![random](https://github.com/divyamprabhudessai/FEWD-CA-2-COOKAROO/assets/144110931/21f0665b-3553-4c73-8674-0f8e9ab2b135)
+
+
 ## 3. List of Searched Meal Categories - Section:
 
 When you use the search box to explore a specific category, the magic happens. Cookaroo reveals a curated list of searched meal categories, showcasing a diverse array of meals that match your criteria.
+
+![category](https://github.com/divyamprabhudessai/FEWD-CA-2-COOKAROO/assets/144110931/7f3beb55-94ba-4eb3-8f46-9a5b8703cb82)
+
 
 ### How to Use:
 
